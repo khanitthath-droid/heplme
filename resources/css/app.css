@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-sans text-slate-800 antialiased;
+    }
+}
+
+/* 🌟 User Theme: Radiant Indigo-Sky Ambient Mesh & Subtle Geometric Grid */
+.bg-theme-user {
+    background-color: #f8fafc;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.14) 0px, transparent 55%),
+        radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.10) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(56, 189, 248, 0.07) 0px, transparent 55%),
+        radial-gradient(at 80% 100%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(236, 72, 153, 0.05) 0px, transparent 50%),
+        radial-gradient(#cbd5e1 0.85px, transparent 0.85px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+    background-attachment: fixed;
+}
+
+/* 👑 Admin Theme: Executive Purple-Indigo Glow with Refined Grid Mesh */
+.bg-theme-admin {
+    background-color: #faf5ff;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(147, 51, 234, 0.16) 0px, transparent 55%),
+        radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+        radial-gradient(at 50% 60%, rgba(219, 39, 119, 0.08) 0px, transparent 55%),
+        radial-gradient(at 100% 100%, rgba(126, 34, 206, 0.10) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(79, 70, 229, 0.08) 0px, transparent 50%),
+        radial-gradient(#d8b4fe 0.85px, transparent 0.85px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+    background-attachment: fixed;
+}
+
+/* 💎 Modern Card Glass & Elevation with Frosted Depth */
+.card-glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.card-glass-admin {
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(233, 213, 255, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(147, 51, 234, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
